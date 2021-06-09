@@ -11,14 +11,104 @@
 
 <body>
 
-	<p>Texte avant le formulaire</p>
+	<h1> Les formulaires </h1>
+	
+		<p>Texte avant le formulaire</p>
 
-		<form>
-			<p>Texte à l'intérieur du formulaire</p>
+			<form method ="post" action="traitement.php">
+				<p>Texte à l'intérieur du formulaire</p>
+				<p><input type="text" name="pseudo" /></p>
+			</form>
+
+		<p>Texte après le formulaire</p>
+	
+	<h2> Les libéllés </h2>
+		
+		<form method ="post" action="traitement.php">
+			<p>
+				<label>votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" placeholder=" Ex Taddéo" size="30" maxlength="15" />
+			</p>
 		</form>
 
-	<p>Texte après le formulaire</p>
-
+	<h3> la zone de mot de passe </h3>
+	
+		<form method ="post" action="traitement.php">
+			<p>
+				<label for="pseudo">votre pseudo :</label> 
+				<input type="text" name="pseudo" id="pseudo" />
+				
+				<Br />
+				<label for="pass">votre mot de passe :</label> 
+				<input type="password" name="pass" id="pass" />
+			</p>
+		</form>
+		
+		
+	<h4> la zone de mot de passe </h4>
+	
+		<form method ="post" action="traitement.php">
+			<p>
+				cochez vos aliments préferés </Br>
+				<input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites :</label></Br> 
+				<input type="checkbox" name="pâtes" id="pâtes" /> <label for="pâtes">Pâtes :</label></Br>
+				<input type="checkbox" name="poulet" id="poulet" /> <label for="poulet">Poulet :</label></Br>
+				<input type="checkbox" name="légumes" id="légumes" /> <label for="légumes">Pâtes :</label></Br>
+				<Br />
+				<label for="pass">votre mot de passe :</label> 
+				<input type="password" name="pass" id="pass" />
+			</p>
+		</form>
+	
+	<h5> les listes déroulantes </h5>
+		<form method ="post" action="traitement.php">
+			<p>
+				<label for="pays">Dans les pays habitez-vous ?</label></Br>
+				
+				<select name="pays" id="pays">
+					<option value="France">France</option>
+					<option	value="Italie">Italie</option>
+					<option value="Allemagne">Allemagne</option>
+					<option value="Japon">Japon</option>
+					<option value="Chine">Chine</option>
+					<option value="Etats-Unis">Etats-Unis</option>
+					<option value="Canada">Canada</option>
+				</select>
+			</p>
+		</form>
+	
+	<h5> regroupement de listes déroulantes </h5>
+		<form method ="post" action="traitement.php">
+			<p>
+				<label for="pays">Dans les pays habitez-vous ?</label></Br>
+				
+				<select name="pays" id="pays">
+					<optgroup label="Europe">
+						
+						<option value="France">France</option>
+						<option	value="Italie">Italie</option>
+						<option value="Allemagne">Allemagne</option>
+					
+					</optgroup>
+					
+					<optgroup label="Asie">
+						
+						<option value="Japon">Japon</option>
+						<option value="Chine">Chine</option>
+					
+					</optgroup>
+					
+					<optgroup label="Amérique">
+					
+					<option value="Etats-Unis">Etats-Unis</option>
+					<option value="Canada">Canada</option>
+					
+					</optgroup>
+					
+				</select>
+			</p>
+		</form>
+	
+	
 </body>
 
 </html>
