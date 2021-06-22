@@ -7,3 +7,17 @@ h1, em
 {
 	color: blue;
 }
+
+body
+{
+	background-image: url("tad_et_matt_mini.jpg");
+	background-position: 2px 5px;
+}
+
+mark
+{
+
+background-color: red;
+color: black;
+	
+}
